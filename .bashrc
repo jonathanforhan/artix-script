@@ -6,13 +6,13 @@
 #                    |_.__/  \__,_||___/|_| |_||_|   \___|                     #
 #                                                                              #
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
 export PS1="\[\033[38;5;41m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;41m\]\h\[$(tput sgr0)\]:[\[$(tput sgr0)\]\[\033[38;5;39m\]\W\[$(tput sgr0)\]]\\$ \[$(tput sgr0)\]"
 export EDITOR="nvim"
 export GPG_TTY=$(tty) # gpg git-credential
 export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
 #                             _  _                                             #
 #                       __ _ | |(_)  __ _  ___   ___  ___                      #
