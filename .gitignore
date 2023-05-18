@@ -3,4 +3,5 @@
 !.bash*
 !.Xresources
 !.xinitrc
+!.config
 !artix-script.sh

@@ -2,5 +2,9 @@
 	credentialStore = gpg
 	helper = 
 	helper = /usr/local/bin/git-credential-manager
+	guiPrompt = false
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[user]
+	email = jonathan.forhan@gmail.com
+	name = jonathanforhan
