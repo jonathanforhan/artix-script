@@ -1,0 +1,6 @@
+*
+!.gitignore
+!.bash*
+!.Xresources
+!.xinitrc
+!artix-script.sh
