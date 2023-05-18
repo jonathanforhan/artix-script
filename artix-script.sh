@@ -54,7 +54,22 @@ if [[ $(confirmation "nodejs") == "yes" ]]; then
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
     . .bashrc
     nvm install node
+    sudo npm -g i neovim
+fi
+
+## Setup Python
+figlet -ct 'Python  Setup'
+if [[ $(confirmation "python") == "yes" ]]; then
+    sudo pacman -S python-pip python-virtualenv
+    pip install neovim
+fi
+
+## Setup Perl
+figlet -ct 'Perl Setup'
+if [[ $(confirmation "perl") == "yes" ]]; then
+    curl -L http://cpanmin.us | perl - --sudo App::cpanminus    
+    cpanm install local::lib
+    cpanm install Neovim::Ext
 fi
 
 ## Setup GUI
-
