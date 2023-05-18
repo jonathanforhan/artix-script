@@ -48,7 +48,11 @@ if [[ $(confirmation "tmux") == "yes" ]]; then
     tmux kill-server
 fi
 
-## Setup KVM
+## Setup Nodejs
+figlet -ct 'Nodejs  Setup'
+if [[ $(confirmation "nodejs") == "yes" ]]; then
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+fi
 
 ## Setup GUI
 

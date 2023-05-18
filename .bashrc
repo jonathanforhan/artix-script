@@ -10,6 +10,10 @@ export PS1="\[\033[38;5;41m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;41m\
 export EDITOR="nvim"
 export GPG_TTY=$(tty) # gpg git-credential
 export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
+export XDG_CONFIG_HOME="$HOME/.config"
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
