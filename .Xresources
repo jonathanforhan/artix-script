@@ -1,0 +1,84 @@
+!Tokyo Night theme
+
+#define BLACK            #1a1b26
+#define LIGHT_GRAY       #a9b1d6
+#define DARK_GRAY        #222222
+#define RED              #f7768e
+#define GREEN            #9ECE6A
+#define YELLOW           #e0af68
+#define BLUE             #7aa2f7
+#define MAGENTA          #9a7ecc
+#define CYAN             #4abaaf
+#define WHITE            #acb0d0
+
+! general
+*foreground              : LIGHT_GRAY
+*background              : BLACK
+*cursorColor             : LIGHT_GRAY
+! terminal padding color
+*borderColor             : BLACK
+! black
+*color0                  : BLACK
+*color8                  : DARK_GRAY
+! red
+*color1                  : RED
+*color9                  : RED
+! green
+*color2                  : GREEN
+*color10                 : GREEN
+! yellow
+*color3                  : YELLOW
+*color11                 : YELLOW
+! blue
+*color4                  : BLUE
+*color12                 : BLUE
+! magenta
+*color5                  : MAGENTA
+*color13                 : MAGENTA
+! cyan
+*color6                  : CYAN
+*color14                 : CYAN
+! white
+*color7                  : WHITE
+*color15                 : WHITE
+
+! DWM
+dwm.normfgcolor          : WHITE
+dwm.normbgcolor          : DARK_GRAY
+dwm.normbordercolor      : DARK_GRAY
+dwm.normfloatcolor       : DARK_GRAY
+
+dwm.selfgcolor           : DARK_GRAY
+dwm.selbgcolor           : BLUE
+dwm.selbordercolor       : BLUE
+dwm.selfloatcolor        : BLUE
+
+dwm.titlenormfgcolor     : LIGHT_GRAY
+dwm.titlenormbgcolor     : DARK_GRAY
+dwm.titlenormbordercolor : DARK_GRAY
+dwm.titlenormfloatcolor  : DARK_GRAY
+
+dwm.titleselfgcolor      : LIGHT_GRAY
+dwm.titleselbgcolor      : DARK_GRAY
+dwm.titleselbordercolor  : DARK_GRAY
+dwm.titleselfloatcolor   : DARK_GRAY
+
+dwm.tagsnormfgcolor      : LIGHT_GRAY
+dwm.tagsnormbgcolor      : DARK_GRAY
+dwm.tagsnormbordercolor  : DARK_GRAY
+dwm.tagsnormfloatcolor   : DARK_GRAY
+
+dwm.tagsselfgcolor       : DARK_GRAY
+dwm.tagsselbgcolor       : BLUE
+dwm.tagsselbordercolor   : BLUE
+dwm.tagsselfloatcolor    : BLUE
+
+dwm.hidnormfgcolor       : BLUE
+dwm.hidselfgcolor        : BLUE
+dwm.hidnormbgcolor       : DRAK_GRAY
+dwm.hidselbgcolor        : DRAK_GRAY
+
+dwm.urgfgcolor           : LIGHT_GRAY
+dwm.urgbgcolor           : DARK_GRAY
+dwm.urgbordercolor       : RED
+dwm.urgfloatcolor        : MAGENTA
