@@ -15,6 +15,7 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 eval "$(perl -I$HOME/.local/share/perl5/lib/perl5 -Mlocal::lib=$HOME/.local/share/perl5)"
+. "$HOME/.cargo/env"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -49,4 +50,3 @@ alias imgcp="xclip -selection clipboard -t image/png -i"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 export PATH="$HOME/.scripts/cmaker:$PATH"
-#. "$HOME/.cargo/env"

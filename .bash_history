@@ -379,3 +379,10 @@ cpan install Neovim::Ext
 l
 ll
 exit
+sudo pacman -S bottom
+sudo pacman -Ss bottom
+sudo pacman -Ss lazygit
+sudo pacman -Ss gdu
+sudo yay -Ss gdu
+sudo pacman -S gdu
+rust --version
