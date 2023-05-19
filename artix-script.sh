@@ -2,7 +2,7 @@
 
 sudo pacman -Syu
 source "$HOME/.bashrc"
-sudo pacman -S --needed curl git figlet
+sudo pacman -S --needed curl git figlet neofetch vi
 
 confirmation() {
     read -p "Do you wish to setup $1? [Y/n] " opt
@@ -22,6 +22,9 @@ PERL=0
 RUBY=0
 NVIM=0
 TMUX=0
+BLUETOOTH=0
+TIMESHIFT=0
+GUI=0
 
 ## Setup Git
 figlet -ct 'Git  Setup'
@@ -115,4 +118,27 @@ if [[ $(confirmation "tmux") == "yes" ]]; then
     tmux kill-server
 fi
 
+## Setup Bluetooth
+figlet -ct 'Bluetooth  Setup'
+if [[ $(confirmation "bluetooth") == "yes" ]]; then
+    $BLUETOOTH=1
+    sudo pacman -S --needed bluez bluez-utils bluez-openrc
+fi
+
+## Setup Timeshift
+figlet -ct 'Timeshift  Setup'
+if [[ $(confirmation "timeshift") == "yes" ]]; then
+    $TIMESHIFT=1
+    sudo pacman -S --needed bluez bluez-utils bluez-openrc
+fi
+
 ## Setup GUI
+figlet -ct 'GUI  Setup'
+if [[ $(confirmation "gui") == "yes" ]]; then
+    $GUI=1
+    sudo pacman -S --needed redshift xorg-xinit xorg-server xorg-xrdb xorg-xsetroot xclip \
+        wireless_tools lxappearance
+    sudo ln -s "$HOME/.config/fonts" "$HOME/.local/share/fonts/"
+    startx
+fi
+
