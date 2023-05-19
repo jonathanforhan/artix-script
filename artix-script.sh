@@ -42,7 +42,6 @@ if [[ $(confirmation "git") == "yes" ]]; then
     git config --global user.name "$git_name"
     read -p "Github email: " git_email
     git config --global user.email "$git_email"
-    git config --global credential.guiPrompt false
 fi
 
 ## Setup AUR
